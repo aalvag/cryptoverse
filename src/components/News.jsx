@@ -33,7 +33,7 @@ function News({ simplified }) {
           >
             <Select.Option value="Cryptocurency">Cryptocurrency</Select.Option>
             {data?.data?.coins?.map((currency) => (
-              <Select.Option value={currency.name}>
+              <Select.Option value={currency.name} key={currency.name}>
                 {currency.name}
               </Select.Option>
             ))}
